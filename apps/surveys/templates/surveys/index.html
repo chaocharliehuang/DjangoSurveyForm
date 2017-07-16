@@ -4,6 +4,7 @@
     </head>
     <body>
         <form action="/surveys/process" method="POST">
+            {% csrf_token %}
             Your Name: <input type="text" name="name">
             <br><br>
             Dojo Location:

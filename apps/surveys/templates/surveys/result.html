@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Survey Result</title>
+        <style>
+            .message {
+                background-color: lightgreen;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="message">
+            Thanks for submitting this form! You have submitted this form {{request.session.submissions}} time(s) now.
+        </div>
+        <h1>Submitted Information:</h1>
+        <p>Name: {{request.session.name}}</p>
+        <p>Dojo Location: {{request.session.dojo_location}}</p>
+        <p>Favorite Language: {{request.session.fav_lang}}</p>
+        <p>Comment: {{request.session.comment}}</p>
+        <p><a href="/">Go Back</a></p>
+    </body>
+</html>
